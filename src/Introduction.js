@@ -13,17 +13,13 @@ function Introduction() {
         </p>
         <p>
           You can find me on{' '}
-          <a href='https://twitter.com/your-twitter-handle' className='Blue-Text'>
-            Twitter
-          </a>{' '}
-          and{' '}
-          <a href='https://github.com/your-github-username' className='Blue-Text'>
+          <a href='https://github.com/vishnu-dhanda' className='Blue-Text'>
             GitHub
           </a>
           , and I'm happy to chat via email: {}
-          <a href='lol'><span className='Blue-Text'>vishnu.dhanda@ucalgary.ca</span></a>
+          <a href='mailto: vishnu.dhanda@ucalgary.ca'><span className='Blue-Text'>vishnu.dhanda@ucalgary.ca</span></a>
         </p>
-        <p>This website was a weekend project. It was made using Figma, React and Notion as a content management system. Check out the project <a href='github'>here</a></p>
+        <p>This website was a weekend project. It was made using Figma, React and Notion as a content management system. Check out the project <a href='https://github.com/Vishnu-Dhanda/My-Blog.git'>here</a>.</p>
       </div>
       <div className='image-holder'>
           <img className='Profile-photo' src={vishnudhanda} alt='Vishnu Dhanda' />

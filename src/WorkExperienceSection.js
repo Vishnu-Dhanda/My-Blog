@@ -16,7 +16,7 @@ function WorkExperienceSection() {
     <div className='section-container'>
       <div className='content'>
         <h3 className='section-title'>
-          Work Experience
+          Experience
         </h3>
         <ul>
           {workExperiences.map((experience) => (
