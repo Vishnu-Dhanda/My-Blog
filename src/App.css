@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Set default styles for the .App class */
+.App {
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-top: 20px;
+}
+
+/* Apply proportional margins for different screen widths */
+@media screen and (max-width: 1200px) {
+  .App {
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .App {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+}
+
+@media screen and (max-width: 400px) {
+  .App {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+.App-header{
+  display: flex;
+}
+/* NavBar */
+.website-icon{
+  height: 21px;
+  width: 21px;
+  
+}
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+  width: 100%;
+}
+
+.name{
+  color: #1f2937;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-left: 7px;
+}
+
+.icon-and-name{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+a{
+  color: #0987cf;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.page:hover{
+  color: #0987cf;
+ 
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.page{
+  padding-right: 20px;
+  color: #929292;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+

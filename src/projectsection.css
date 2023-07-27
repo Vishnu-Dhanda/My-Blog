@@ -1,0 +1,32 @@
+.projects-section-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+  }
+  
+  .projects-section-container::marker {
+    color: rgb(193, 193, 193); /* Set the bullet point color to grey */
+  }
+
+.project-name{
+    color: #0987cf ;
+    /* border-bottom-style: solid;
+    border-color: #0987cf;
+    border-width: 1px;
+    text-decoration: none !important; */
+}
+
+.experience-date{
+  margin-top: 7px;
+}
+
+i{
+  color: #aeaeae;
+}
+
+.blog-post-date{
+  font-size: 14px;
+  margin-top: -10px;
+}
