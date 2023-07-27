@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import blogicon from './write-svgrepo-com.svg';
 import "react-notion/src/styles.css";
 import { NotionRenderer } from "react-notion";
+import './App.css'
+import WebHeader from './WebHeader';
 
 function BlogSection() {
   const [blocks, setBlocks] = useState([]);
@@ -15,7 +17,7 @@ function BlogSection() {
   }, []);
 
   const getLatestPublishedComponents = () => {
-    return blocks.filter((item) => item.published).sort((a, b) => new Date(b.Date) - new Date(a.Date)).slice(0, 5);
+    return blocks.filter((item) => item.published).sort((a, b) => new Date(b.Date) - new Date(a.Date));
   };
 
   const formatDate = (dateString) => {
@@ -26,29 +28,30 @@ function BlogSection() {
 
   const latestPublishedComponents = blocks !== null ? getLatestPublishedComponents() : [];
 
-  return (
-    <div className='section-container'>
-      <div className='content'>
-        <h3 className='section-title'>
-          Latest Posts
-        </h3>
-        
-        {latestPublishedComponents.length > 0 ? (
-          latestPublishedComponents.map((item) => (
-            <div className='item-link' key={item.id}>
-              <Link to={`/all-posts/${item.id}`} className='blog-item'>
-                <p>{item.Name}</p>
-                <p className='date'>{formatDate(item.Date)}</p>
-              </Link>
-            </div>
-          ))
-        ) : (
+  return (    <div className='App'>
+  <WebHeader />
+  <div className='section-container'>
+    <div className='content'>
+      <h3 className='section-title'>
+        Latest Posts
+      </h3>
+
+      {latestPublishedComponents.length > 0 ? (
+        latestPublishedComponents.map((item, index) => (
+          <div className={`item-link ${index === latestPublishedComponents.length - 1 ? 'more-posts' : ''}`} key={item.id}>
+            <Link className={`blog-item ${index === latestPublishedComponents.length - 1 ? 'more-posts' : ''}`} key={item.id} to={`/all-posts/${item.id}`}>
+              <p>{item.Name}</p>
+              <p className='date'>{formatDate(item.Date)}</p>
+            </Link>
+          </div>
+        ))
+      ) : (
           <div>No published components found.</div>
         )}
-        <p className='blog-item more-posts item-link opacity'><a href='/all-posts'><u>More Posts</u></a></p>
-      </div>
     </div>
-  );
+  </div>
+</div>
+);
 }
 
 export default BlogSection;

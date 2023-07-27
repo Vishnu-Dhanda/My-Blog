@@ -30,3 +30,29 @@ i{
   font-size: 14px;
   margin-top: -10px;
 }
+
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px; /* Add some space between the tags and skills and the content */
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-weight: bold;
+}
+
+.tag-item,
+.skill-item {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 4px; /* Add space between tags/skills */
+  border-radius: 4px; /* Rounded corners for the rectangles */
+  font-size: 12px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #333; /* Customize text color */
+  background-color: #f5f6fa; /* Pale background color */
+}

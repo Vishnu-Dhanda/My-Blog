@@ -4,7 +4,7 @@ import "react-notion/src/styles.css";
 import './Introduction.css'; // Make sure the CSS file is imported
 import './projectsection.css'
 import { NotionRenderer } from "react-notion";
-
+import { Link } from 'react-router-dom';
 function ProjectSection() {
   const [projects, setProjects] = useState([]); // Initialize as an empty array
 
@@ -40,7 +40,7 @@ function ProjectSection() {
         <ul >
           {latestPublishedComponents.map((project) => (
             <li key={project.id} className='projects-section-container'>
-              <strong className='project-name'>{project.Name}</strong>: {project.Description}
+              <Link to={`/projects/${project.id}`}><strong className='project-name'>{project.Name}</strong></Link>: {project.Description}
             </li>
           ))}
         </ul>

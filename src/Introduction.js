@@ -17,7 +17,7 @@ function Introduction() {
             GitHub
           </a>
           , and I'm happy to chat via email: {}
-          <a href='mailto: vishnu.dhanda@ucalgary.ca'><span className='Blue-Text'>vishnu.dhanda@ucalgary.ca</span></a>
+          <a href='mailto:vishnu.dhanda@ucalgary.ca'><span className='Blue-Text'>vishnu.dhanda@ucalgary.ca</span></a>
         </p>
         <p>This website was a weekend project. It was made using Figma, React and Notion as a content management system. Check out the project <a href='https://github.com/Vishnu-Dhanda/My-Blog.git'>here</a>.</p>
       </div>

@@ -111,10 +111,11 @@ p, span{
 
 .more-posts{
     border-style: none !important;
+    border-bottom-width: 0px !important;
     text-underline-offset: 3px;
     color: #aeaeae;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
 }
 .item-link:hover{
     background-color: #f3f4f6;
